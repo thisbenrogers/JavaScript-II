@@ -1,9 +1,13 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+let a = 3;
+let addX = x => y => y + x;
+const addTwelve = addX(12);
+let b = addTwelve(a);
+console.log("sample closure that adds 12 and 3:", b);
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
