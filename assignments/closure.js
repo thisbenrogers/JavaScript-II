@@ -10,23 +10,22 @@ console.log("sample closure that adds 12 and 3:", b);
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 // ==== Challenge 2: Create a counter function ====
-const counter = () => {
+const counter = (x = 0) => {
   // Return a function that when invoked increments and returns a counter variable.
-  return ++x;
+  let y = x;
+  return function counter() {
+    y += 1;
+    console.log(y);
+    return y;
+  };
 };
-let x = 0;
-x = counter(x);
-console.log(x);
-x = counter(x);
-console.log(x);
-x = counter(x);
-console.log(x);
-x = counter(x);
-console.log(x);
-x = counter(x);
-console.log(x);
-x = counter(x);
-console.log(x);
+const newCounter = counter();
+// Example usage: const newCounter = counter();
+newCounter();
+newCounter();
+newCounter();
+newCounter();
+
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
