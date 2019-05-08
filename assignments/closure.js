@@ -16,7 +16,6 @@ const counter = (x = 0) => {
   return function counter() {
     y += 1;
     console.log(y);
-    return y;
   };
 };
 const newCounter = counter();

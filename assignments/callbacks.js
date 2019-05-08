@@ -3,7 +3,7 @@
 // Study both the problem and the solution to figure out the rest of the problems.
 
 const items = ["Pencil", "Notebook", "yo-yo", "Gum"];
-const nonUniqueValues = ["2", "2", "1", 1, 1, 2, "3", 3, "3", 4, 4, 4, "4"];
+
 /* 
 
   //Given this problem: 
@@ -67,6 +67,8 @@ contains("Gum", items, log);
 contains("Xerox", items, log);
 
 /* STRETCH PROBLEM */
+
+const nonUniqueValues = ["2", "2", "1", 1, 1, 2, "3", 3, "3", 4, 4, 4, "4"];
 
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
